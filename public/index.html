@@ -7,38 +7,22 @@
     <!-- The style.css file allows you to change the look of your web pages.
          If you include the next line in all your web pages, they will all share the same look.
          This makes it easier to make new pages for your site. -->
-    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
   </head>
   <header>
     <h1>Yo, welcome to my Website!</h1>
   </header>
   <body>
     <p>Do you want to continue to my site</p>
-    <a href="home.html">For sure!</a>
-    <a href="https://neocities.org/">Hell nah!</a>
-
-
-    <iframe src="iframe_test.html" title="TEST"></iframe>
-
-
-    <!--
-    <p>This is a paragraph! Here's how you make a link: <a href="https://neocities.org">Neocities</a>.</p>
-
-    <p>Here's how you can make <strong>bold</strong> and <em>italic</em> text.</p>
-
-    <p>Here's how you can add an image:</p>
-    <img src="/neocities.png" alt="Site hosted by Neocities">
-
-    <p>Here's how to make a list:</p>
-
-    <ul>
-      <li>First thing</li>
-      <li>Second thing</li>
-      <li>Third thing</li>
-    </ul>
-
-    <p>To learn more HTML/CSS, check out these <a href="https://neocities.org/tutorials">tutorials</a>!</p>
-    -->
+    <form action="home.html">
+      <input type="submit" value="For sure!" />
+    </form>
+    <form action="https://neocities.org/">
+      <input type="submit" value="Hell nah!" />
+    </form>
   </body>
   <footer>
     <p>The night is calling, teehee!</p>
@@ -46,4 +30,13 @@
       <img src="neocities.png" onmouseover="this.src='neocities_hover.png';" onmouseout="this.src='neocities.png';" onmousedown="this.src='neocities_hover_alt.png';" alt="Site hosted by Neocities">
     </a>
   </footer>
+  <style>
+    body {
+      background-color: white;
+      color: black;
+      display: flexbox;
+      align-self: center;
+      justify-self: center;
+    }
+  </style>
 </html>

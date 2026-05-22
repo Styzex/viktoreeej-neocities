@@ -4,8 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Homepage</title>
+  <link href="home.css" rel="stylesheet" type="text/css" media="all">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <a href=""></a>
+  <aside>
+    <div id="buttons" class="buttons">
+      <button onmousedown="document.getElementById('page').src='iframe_test.html';">HOME</button>
+      <button onmousedown="document.getElementById('page').src='aboutme.html';">ABOUT</button>
+      <button onmousedown="document.getElementById('page').src='blog.html';">BLOG</button>
+      <button onmousedown="document.getElementById('page').src='links.html';">LINKS</button>
+    </div>
+  </aside>
+  <main>
+    <iframe id="page" src="iframe_test.html" title="TEST"></iframe>
+  </main>
 </body>
 </html>
