@@ -13,22 +13,22 @@
       href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap"
       rel="stylesheet"
     />
+    <script src="home.js"></script>
   </head>
   <body>
     <aside>
       <div id="buttons" class="buttons">
-        <button onmousedown="document.getElementById('page').src = 'iframe_test.html'">HOME</button>
-        <button onmousedown="document.getElementById('page').src = 'about.html'">ABOUT</button>
-        <button onmousedown="document.getElementById('page').src = 'blog.html'">BLOG</button>
-        <button onmousedown="document.getElementById('page').src = 'bookshelf.html'">
-          BOOKSHELF
-        </button>
-        <button onmousedown="document.getElementById('page').src = 'links.html'">LINKS</button>
-        <button onmousedown="document.getElementById('page').src = 'credits.html'">CREDITS</button>
+        <button onmousedown="btn_link('iframe_test.html', 'HOME')">HOME</button>
+        <button onmousedown="btn_link('about.html', 'ABOUT')">ABOUT</button>
+        <button onmousedown="btn_link('blog.html', 'BLOG')">BLOG</button>
+        <button onmousedown="btn_link('bookshelf.html', 'BOOKSHELF')">BOOKSHELF</button>
+        <button onmousedown="btn_link('links.html', 'LINKS')">LINKS</button>
+        <button onmousedown="btn_link('credits.html', 'CREDITS')">CREDITS</button>
       </div>
     </aside>
     <main>
-      <iframe id="page" src="iframe_test.html" title="TEST"></iframe>
+      <iframe id="head_bar" class="bar" src="header.html"></iframe>
+      <iframe id="page" class="main" src="iframe_test.html"></iframe>
     </main>
   </body>
 </html>
